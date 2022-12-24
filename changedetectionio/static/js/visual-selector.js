@@ -188,7 +188,7 @@ $(document).ready(function () {
                     &&
                     e.offsetX > sel.left * y_scale && e.offsetX < sel.left * y_scale + sel.width * y_scale
                     &&
-                    sel.square < minSquare
+                    sel.width * sel.height < minSquare
                 ) {
 
                     // FOUND ONE
@@ -198,7 +198,7 @@ $(document).ready(function () {
                     // @todo or, O to go out/up, I to go in
                     // or double click to go up/out the selector?
                     current_selected_i = i;
-                    minSquare = sel.square;
+                    minSquare = sel.width * sel.height;
                 }
             }
             
