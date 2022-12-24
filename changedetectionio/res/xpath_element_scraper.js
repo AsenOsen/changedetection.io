@@ -140,6 +140,7 @@ for (var i = 0; i < elements.length; i++) {
         xpath: xpath_result,
         width: Math.round(bbox['width']),
         height: Math.round(bbox['height']),
+        square: Math.round(bbox['width'])*Math.round(bbox['height']),
         left: Math.floor(bbox['left']),
         top: Math.floor(bbox['top'])+scroll_y,
         tagName: (elements[i].tagName) ? elements[i].tagName.toLowerCase() : '',
